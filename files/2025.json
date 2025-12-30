@@ -1,0 +1,134 @@
+{
+  "name": "台灣租屋",
+  "children": [
+    {
+      "name": "北部",
+      "children": [
+        {
+          "name": "台北市",
+          "children": [
+            {"name": "整層住家", "value": 16500},
+            {"name": "套房", "value": 13500},
+            {"name": "雅房", "value": 8500}
+          ]
+        },
+        {
+          "name": "新北市",
+          "children": [
+            {"name": "整層住家", "value": 14500},
+            {"name": "套房", "value": 11000},
+            {"name": "雅房", "value": 7500}
+          ]
+        },
+        {
+          "name": "桃園市",
+          "children": [
+            {"name": "整層住家", "value": 12000},
+            {"name": "套房", "value": 9500},
+            {"name": "雅房", "value": 6500}
+          ]
+        },
+        {
+          "name": "基隆市",
+          "children": [
+            {"name": "整層住家", "value": 10000},
+            {"name": "套房", "value": 8500},
+            {"name": "雅房", "value": 6000}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "中部",
+      "children": [
+        {
+          "name": "台中市",
+          "children": [
+            {"name": "整層住家", "value": 12500},
+            {"name": "套房", "value": 9000},
+            {"name": "雅房", "value": 6500}
+          ]
+        },
+        {
+          "name": "彰化縣",
+          "children": [
+            {"name": "整層住家", "value": 9500},
+            {"name": "套房", "value": 7500},
+            {"name": "雅房", "value": 5200}
+          ]
+        },
+        {
+          "name": "苗栗縣",
+          "children": [
+            {"name": "整層住家", "value": 9000},
+            {"name": "套房", "value": 7200},
+            {"name": "雅房", "value": 5000}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "南部",
+      "children": [
+        {
+          "name": "高雄市",
+          "children": [
+            {"name": "整層住家", "value": 11000},
+            {"name": "套房", "value": 8500},
+            {"name": "雅房", "value": 6000}
+          ]
+        },
+        {
+          "name": "台南市",
+          "children": [
+            {"name": "整層住家", "value": 10500},
+            {"name": "套房", "value": 8000},
+            {"name": "雅房", "value": 5800}
+          ]
+        },
+        {
+          "name": "屏東縣",
+          "children": [
+            {"name": "整層住家", "value": 8500},
+            {"name": "套房", "value": 6800},
+            {"name": "雅房", "value": 5000}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "東部",
+      "children": [
+        {
+          "name": "花蓮縣",
+          "children": [
+            {"name": "整層住家", "value": 9000},
+            {"name": "套房", "value": 7000},
+            {"name": "雅房", "value": 5200}
+          ]
+        },
+        {
+          "name": "台東縣",
+          "children": [
+            {"name": "整層住家", "value": 8200},
+            {"name": "套房", "value": 6500},
+            {"name": "雅房", "value": 4800}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "離島",
+      "children": [
+        {
+          "name": "澎湖縣",
+          "children": [
+            {"name": "整層住家", "value": 7800},
+            {"name": "套房", "value": 6200},
+            {"name": "雅房", "value": 4500}
+          ]
+        }
+      ]
+    }
+  ]
+}

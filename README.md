@@ -31,3 +31,17 @@ const runtime = new Runtime();
 const main = runtime.module(define);
 main.value("foo").then(value => console.log(value));
 ~~~
+
+## GitHub Pages deployment
+
+This repository is configured to deploy to GitHub Pages from the `main` branch. The
+workflow in [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) uploads the
+static site from the repository root and publishes it to the `github-pages`
+environment. Push to `main` or trigger the workflow manually to update the hosted
+chart.
+
+## Data
+
+The chart now visualizes Taiwan rental listings broken down by region, city, and
+listing type using the data in [`files/2025.json`](files/2025.json). Update this
+file if you need to adjust the displayed rent levels.
