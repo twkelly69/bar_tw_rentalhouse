@@ -39,3 +39,9 @@ workflow in [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) uploa
 static site from the repository root and publishes it to the `github-pages`
 environment. Push to `main` or trigger the workflow manually to update the hosted
 chart.
+
+## Data
+
+The chart now visualizes Taiwan rental listings broken down by region, city, and
+listing type using the data in [`files/2025.json`](files/2025.json). Update this
+file if you need to adjust the displayed rent levels.
