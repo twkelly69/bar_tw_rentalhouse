@@ -1,14 +1,38 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-<title>Hierarchical bar chart</title>
-<link rel="stylesheet" type="text/css" href="./inspector.css">
+<html lang="zh-Hant">
+<head>
+    <meta charset="utf-8">
+    <title>台灣租屋資料統計 - 階層式長條圖</title>
+    <link rel="stylesheet" type="text/css" href="./inspector.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        #chart-container { margin-top: 20px; }
+    </style>
+</head>
 <body>
-<script type="module">
+    <h1>台灣租屋資料統計</h1>
+    <p>點擊藍色長條可查看細節，點擊空白處可返回上一層。</p>
 
-import define from "./index.js";
-import {Runtime, Library, Inspector} from "./runtime.js";
+    <div id="chart-container"></div>
 
-const runtime = new Runtime();
-const main = runtime.module(define, Inspector.into(document.body));
+    <script type="module">
+        // 1. 引入 Observable Runtime 工具
+        import { Runtime, Inspector } from "./runtime.js";
+        
+        // 2. 引入您的圖表邏輯核心檔案 (請確保檔名與您的 GitHub 檔案一致)
+        import define from "./0b07c3790ae4af2c@369.js";
 
-</script>
+        const runtime = new Runtime();
+        const main = runtime.module(define, name => {
+            // 3. 告訴程式：把名為 "chart" 的圖表物件，放進 ID 為 chart-container 的 div 裡
+            if (name === "chart") {
+                return new Inspector(document.querySelector("#chart-container"));
+            }
+        });
+
+        // 4. 強制把圖表內的 "data" 變數，替換成您剛剛改好的 2025.json 檔案內容
+        main.redefine("data", d3.json("2025.json"));
+    </script>
+</body>
+</html>
